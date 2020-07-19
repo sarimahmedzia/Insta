@@ -1,0 +1,38 @@
+[debug] [2020-07-13T10:59:42.956Z] ----------------------------------------------------------------------
+[debug] [2020-07-13T10:59:42.959Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sarim\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-07-13T10:59:42.960Z] CLI Version:   8.5.0
+[debug] [2020-07-13T10:59:42.960Z] Platform:      win32
+[debug] [2020-07-13T10:59:42.960Z] Node Version:  v10.16.3
+[debug] [2020-07-13T10:59:42.961Z] Time:          Mon Jul 13 2020 03:59:42 GMT-0700 (Pacific Daylight Time)
+[debug] [2020-07-13T10:59:42.961Z] ----------------------------------------------------------------------
+[debug] [2020-07-13T10:59:42.962Z] 
+[debug] [2020-07-13T10:59:42.976Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-07-13T10:59:42.976Z] > authorizing via signed-in user
+[debug] [2020-07-13T10:59:42.977Z] [iam] checking project insta-c5dc0 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-07-13T10:59:42.981Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-07-13T10:59:42.981Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-07-13T10:59:52.813Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 12 Jul 2020 22:00:19 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-13T10:59:52.825Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/insta-c5dc0:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-07-13T11:00:06.672Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 12 Jul 2020 22:00:34 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1195","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-13T11:00:06.675Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/insta-c5dc0  
+ 
+[debug] [2020-07-13T11:00:18.322Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 12 Jul 2020 22:00:44 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'insta-c5dc0'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-07-13T11:00:18.332Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/insta-c5dc0/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-07-13T11:00:38.190Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 12 Jul 2020 22:01:04 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[insta-c5dc0]: beginning deploy... 
+[info] i  hosting[insta-c5dc0]: found 2 files in public 
+[debug] [2020-07-13T11:00:38.205Z] [hosting] hash cache [cHVibGlj] not populated
+[debug] [2020-07-13T11:00:38.218Z] [hosting] hash cache [cHVibGlj] stored for 2 files
+[debug] [2020-07-13T11:00:38.218Z] [hosting][hash queue][FINAL] {"max":8,"min":6,"avg":7,"active":0,"complete":2,"success":2,"errored":0,"retried":0,"total":2,"elapsed":12}
+[debug] [2020-07-13T11:00:38.219Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/insta-c5dc0/versions/6af227a638e878bd:populateFiles  
+ <request body omitted>
+[debug] [2020-07-13T11:00:44.217Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 12 Jul 2020 22:01:11 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-13T11:00:44.221Z] [hosting][populate queue][FINAL] {"max":6003,"min":6003,"avg":6003,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":6006}
+[debug] [2020-07-13T11:00:44.221Z] [hosting] uploads queued: 2
